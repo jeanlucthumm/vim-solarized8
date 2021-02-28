@@ -403,6 +403,9 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
       hi pandocEmphasisTable gui=NONE cterm=NONE
       hi pandocEmphasis gui=NONE cterm=NONE
     endif
+    hi CocUnderline cterm=NONE gui=NONE guibg=#fde2e2
+    hi CocRustChainingHint ctermfg=12 guifg=#bfbfbf
+    hi CocRustTypeHint ctermfg=12 guifg=#bfbfbf
     if get(g:, 'solarized_statusline', '') ==# 'flat'
       hi ALEErrorSign guifg=#dc322f guibg=NONE gui=bold cterm=bold
       hi ALEInfoSign guifg=#2aa198 guibg=NONE gui=bold cterm=bold
