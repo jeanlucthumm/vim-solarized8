@@ -403,9 +403,6 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
       hi pandocEmphasisTable gui=NONE cterm=NONE
       hi pandocEmphasis gui=NONE cterm=NONE
     endif
-    hi CocUnderline cterm=NONE gui=NONE guibg=#fde2e2
-    hi CocRustChainingHint ctermfg=12 guifg=#bfbfbf
-    hi CocRustTypeHint ctermfg=12 guifg=#bfbfbf
     if get(g:, 'solarized_statusline', '') ==# 'flat'
       hi ALEErrorSign guifg=#dc322f guibg=NONE gui=bold cterm=bold
       hi ALEInfoSign guifg=#2aa198 guibg=NONE gui=bold cterm=bold
@@ -444,6 +441,9 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
     finish
   endif
   " Light background
+  hi CocUnderline cterm=NONE gui=NONE guibg=#fde2e2
+  hi CocRustChainingHint ctermfg=12 guifg=#bfbfbf
+  hi CocRustTypeHint ctermfg=12 guifg=#bfbfbf
   let g:terminal_ansi_colors = ['#073642', '#dc322f', '#859900', '#b58900',
         \ '#268bd2', '#d33682', '#2aa198', '#eee8d5', '#002b36', '#cb4b16',
         \ '#586e75', '#657b83', '#839496', '#6c71c4', '#93a1a1', '#fdf6e3']
